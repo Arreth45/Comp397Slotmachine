@@ -16,7 +16,7 @@ var scenes;
         // Start Method
         GameOver.prototype.start = function () {
             // add the LEFT_CAVE button to the MENU scene
-            this._restartButton = new objects.Button("StartOverButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 80);
+            this._restartButton = new objects.Button("StartOverButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 80, true);
             this.addChild(this._restartButton);
             // LEFT_CAVE Button event listener
             this._restartButton.on("click", this.__restartButtonClick, this);

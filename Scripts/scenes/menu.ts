@@ -18,7 +18,7 @@ module scenes {
             this._startButton = new objects.Button(
                 "StartButton",
                 config.Screen.CENTER_X + 100,
-                config.Screen.CENTER_Y + 80);
+                config.Screen.CENTER_Y + 80 , true);
             this.addChild(this._startButton);
             
             // LEFT_CAVE Button event listener

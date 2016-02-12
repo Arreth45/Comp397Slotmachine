@@ -18,7 +18,8 @@ module scenes {
             this._restartButton = new objects.Button(
                 "StartOverButton",
                 config.Screen.CENTER_X + 100,
-                config.Screen.CENTER_Y + 80);
+                config.Screen.CENTER_Y + 80,
+                true);
             this.addChild(this._restartButton);
             
             // LEFT_CAVE Button event listener
