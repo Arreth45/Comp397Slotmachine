@@ -19,7 +19,16 @@ var assetData = [
     { id: "Bet10Button", src: "../../Assets/images/Bet10Button.png" },
     { id: "Bet1Button", src: "../../Assets/images/Bet1Button.png" },
     { id: "SpinButton", src: "../../Assets/images/SpinButton.png" },
-    { id: "SlotMachine", src: "../../Assets/images/SlotMachine.png" }
+    { id: "SlotMachine", src: "../../Assets/images/SlotMachine.png" },
+    { id: "Blank", src: "../../Assets/images/Blank.png" },
+    //images to find
+    { id: "Stormtrooper", src: "../../Assets/images/Stormtrooper.png" },
+    { id: "Lightsaber", src: "../../Assets/images/Lightsaber.png" },
+    { id: "Falcon", src: "../../Assets/images/Falcon.png" },
+    { id: "Xwing", src: "../../Assets/images/Xwing.png" },
+    { id: "Tie", src: "../../Assets/images/Tie.png" },
+    { id: "Death", src: "../../Assets/images/Death.png" },
+    { id: "Rebel", src: "../../Assets/images/Rebel.png" }
 ];
 function preload() {
     assets = new createjs.LoadQueue();
@@ -92,4 +101,5 @@ function changeScene() {
     }
     console.log(currentScene.numChildren);
 }
+window.onload = preload;
 //# sourceMappingURL=game.js.map

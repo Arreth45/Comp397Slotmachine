@@ -20,7 +20,7 @@ var scenes;
             this.addChild(this._startButton);
             // LEFT_CAVE Button event listener
             this._startButton.on("click", this._startButtonClick, this);
-            this._introLabel = new objects.Label("SLOT MACHINE", "60px Consolas", "#000000", config.Screen.CENTER_X, config.Screen.CENTER_Y);
+            this._introLabel = new objects.Label("SLOT MACHINE", "60px Consolas", "#000000", config.Screen.CENTER_X, config.Screen.CENTER_Y, true);
             this.addChild(this._introLabel);
             // add this scene to the global stage container
             stage.addChild(this);
@@ -32,8 +32,11 @@ var scenes;
         // start Button click event handler
         Menu.prototype._startButtonClick = function (event) {
             // Switch to the start Scene
-            scene = config.Scene.SLOT_MACHINE;
-            changeScene();
+            this._fadeOut(500, function () {
+                // Switch to the LEFT_CAVE Scene
+                scene = config.Scene.SLOT_MACHINE;
+                changeScene();
+            });
         };
         return Menu;
     })(objects.Scene);

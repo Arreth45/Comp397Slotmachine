@@ -18,7 +18,7 @@ module scenes {
             this._startButton = new objects.Button(
                 "StartButton",
                 config.Screen.CENTER_X + 100,
-                config.Screen.CENTER_Y + 80 , true);
+                config.Screen.CENTER_Y + 80, true);
             this.addChild(this._startButton);
             
             // LEFT_CAVE Button event listener
@@ -29,9 +29,10 @@ module scenes {
                 "60px Consolas",
                 "#000000",
                 config.Screen.CENTER_X,
-                config.Screen.CENTER_Y
+                config.Screen.CENTER_Y,
+                true
             );
-            
+
             this.addChild(this._introLabel);
             
             // add this scene to the global stage container
@@ -47,8 +48,11 @@ module scenes {
         // start Button click event handler
         private _startButtonClick(event: createjs.MouseEvent) {
             // Switch to the start Scene
-            scene = config.Scene.SLOT_MACHINE;
-            changeScene();
+            this._fadeOut(500, () => {
+                // Switch to the LEFT_CAVE Scene
+                scene = config.Scene.SLOT_MACHINE;
+                changeScene();
+            });
         }
     }
 }

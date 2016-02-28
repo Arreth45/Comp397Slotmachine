@@ -14,16 +14,26 @@ var menu: scenes.Menu;
 var slotMachine: scenes.SlotMachine;
 var gameOver: scenes.GameOver;
 
-var assetData:objects.Asset[] = [
-    {id: "BackButton", src:"../../Assets/images/BackButton.png"},
-    {id: "Nextbutton", src:"../../Assets/images/Nextbutton.png"},
-    {id: "StartButton", src:"../../Assets/images/StartButton.png"},
-    {id: "StartOverButton", src:"../../Assets/images/StartOverButton.png"},
-    {id: "Bet100Button",src:"../../Assets/images/Bet100Button.png"},
-    {id: "Bet10Button",src:"../../Assets/images/Bet10Button.png"},
-    {id: "Bet1Button",src:"../../Assets/images/Bet1Button.png"},
-    {id: "SpinButton",src:"../../Assets/images/SpinButton.png"},
-    {id: "SlotMachine",src:"../../Assets/images/SlotMachine.png"}
+var assetData: objects.Asset[] = [
+    { id: "BackButton", src: "../../Assets/images/BackButton.png" },
+    { id: "Nextbutton", src: "../../Assets/images/Nextbutton.png" },
+    { id: "StartButton", src: "../../Assets/images/StartButton.png" },
+    { id: "StartOverButton", src: "../../Assets/images/StartOverButton.png" },
+    { id: "Bet100Button", src: "../../Assets/images/Bet100Button.png" },
+    { id: "Bet10Button", src: "../../Assets/images/Bet10Button.png" },
+    { id: "Bet1Button", src: "../../Assets/images/Bet1Button.png" },
+    { id: "SpinButton", src: "../../Assets/images/SpinButton.png" },
+    { id: "SlotMachine", src: "../../Assets/images/SlotMachine.png" },
+    { id: "Blank", src: "../../Assets/images/Blank.png" },
+    //images to find
+    
+    { id: "Stormtrooper", src: "../../Assets/images/Stormtrooper.png" },
+    { id: "Lightsaber", src: "../../Assets/images/Lightsaber.png" },
+    { id: "Falcon", src: "../../Assets/images/Falcon.png" },
+    { id: "Xwing", src: "../../Assets/images/Xwing.png" },
+    { id: "Tie", src: "../../Assets/images/Tie.png" },
+    { id: "Death", src: "../../Assets/images/Death.png" },
+    { id: "Rebel", src: "../../Assets/images/Rebel.png" }
 ];
 
 function preload() {
@@ -112,3 +122,5 @@ function changeScene(): void {
 
     console.log(currentScene.numChildren);
 }
+
+window.onload = preload;

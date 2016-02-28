@@ -20,7 +20,7 @@ var scenes;
             this.addChild(this._restartButton);
             // LEFT_CAVE Button event listener
             this._restartButton.on("click", this.__restartButtonClick, this);
-            this._gameOverLabel = new objects.Label("GAME OVER", "60px Consolas", "#000000", config.Screen.CENTER_X, config.Screen.CENTER_Y);
+            this._gameOverLabel = new objects.Label("GAME OVER", "60px Consolas", "#000000", config.Screen.CENTER_X, config.Screen.CENTER_Y, true);
             this.addChild(this._gameOverLabel);
             // add this scene to the global stage container
             stage.addChild(this);
