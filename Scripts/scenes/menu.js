@@ -21,6 +21,7 @@ var scenes;
             // LEFT_CAVE Button event listener
             this._startButton.on("click", this._startButtonClick, this);
             this._introLabel = new objects.Label("SLOT MACHINE", "60px Consolas", "#000000", config.Screen.CENTER_X, config.Screen.CENTER_Y, true);
+            this._setupBackground("WhiteBackground");
             this.addChild(this._introLabel);
             // add this scene to the global stage container
             stage.addChild(this);

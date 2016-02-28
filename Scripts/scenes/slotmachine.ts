@@ -303,7 +303,7 @@ module scenes {
 
         private _bet100ButtonClick(event: createjs.MouseEvent): void {
             console.log("Bet 100 Coin");
-            this._placeBet(1);
+            this._placeBet(100);
 
         }
 

@@ -240,7 +240,7 @@ var scenes;
         };
         SlotMachine.prototype._bet100ButtonClick = function (event) {
             console.log("Bet 100 Coin");
-            this._placeBet(1);
+            this._placeBet(100);
         };
         SlotMachine.prototype._spinButtonClick = function (event) {
             if (this._playerBet > 0) {

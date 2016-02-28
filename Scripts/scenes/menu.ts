@@ -32,6 +32,8 @@ module scenes {
                 config.Screen.CENTER_Y,
                 true
             );
+            
+            this._setupBackground("WhiteBackground");
 
             this.addChild(this._introLabel);
             
